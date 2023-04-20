@@ -8,11 +8,7 @@ public abstract class Employee extends Customer implements Discountable{
     }
 
 
-    public void printEmployeePriceAfterDiscount(Product product){
-        double price = product.getPrice();
-        double discountedPrice = price * Employee_DISCOUNT;
-        System.out.println("The Employee price after discount: " + discountedPrice);
-    }
+    public abstract void printEmployeePriceAfterDiscount(Product product);
 
     @Override
     public double calculateDiscount(Product product) {

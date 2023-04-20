@@ -3,12 +3,13 @@ package shopping;
 import java.util.Arrays;
 
 public abstract class Customer extends Person {
-    private String Product[];
+    private Product[] products;
     private Size size;
 
-    public Customer(String name, Size size, Product[] product) {
+    public Customer(String name, Size size, Product[] products) {
         super(name);
         this.size = size;
+        this.products = products;
 
     }
 
@@ -17,15 +18,11 @@ public abstract class Customer extends Person {
     }
 
 
-
-
     @Override
     public String toString() {
         return "Customer{" +
-                "Products=" + Arrays.toString(Product) +
+                "products=" + Arrays.toString(products) +
                 ", size=" + size +
                 '}';
     }
-
-
 }

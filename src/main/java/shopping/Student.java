@@ -1,7 +1,7 @@
 package shopping;
 
 public class Student extends Customer implements Discountable {
-    private long studentID = 1234;
+    private long studentID;
     private final double STUDENT_DISCOUNT = .05;
 
     public Student(String name, Size size, Product[] product) {
